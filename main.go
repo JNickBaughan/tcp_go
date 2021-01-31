@@ -44,7 +44,8 @@ func main () {
 }
 
 func handleRequest(conn net.Conn) {
-	// hitting this on a browser will display the http request
+	// hitting this on a browser will display the http request 
+	// hitting this with telnet will display
 	scanner := bufio.NewScanner(conn)
 	for scanner.Scan() {
 		ln := scanner.Text()
